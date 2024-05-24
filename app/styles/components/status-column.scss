@@ -1,0 +1,50 @@
+.status-column {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 0 10px;
+
+  &__heading {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    &::after {
+      content: '';
+      margin-top: 10px;
+    }
+
+    &.red::after {
+      border-bottom: 3px solid red;
+    }
+
+    &.yellow::after {
+      border-bottom: 3px solid yellow;
+    }
+
+    &.green::after {
+      border-bottom: 3px solid green;
+    }
+  }
+
+  &__tasklist {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 10px;
+    list-style: none;
+    min-height: 100px;
+  }
+
+  &__create-btn {
+    text-align: center;
+
+    button {
+      background-color: unset;
+      border: none;
+      color: green;
+      font-size: 32px;
+      width: 30px;
+    }
+  }
+}

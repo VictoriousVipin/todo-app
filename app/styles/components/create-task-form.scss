@@ -1,0 +1,26 @@
+.create-task-form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+
+  input,
+  textarea {
+    width: 100%;
+  }
+  button {
+    background: #38bd38;
+    border: 1px solid green;
+    border-radius: 10px;
+    color: white;
+    width: 100px;
+
+    &:hover {
+      background: #3a903a;
+    }
+  }
+
+  .error-message {
+    color: red;
+  }
+}
